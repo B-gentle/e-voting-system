@@ -1,0 +1,24 @@
+.bg-dark {
+    background-color: green !important;
+}
+
+.nav-link {
+    color: white;
+    border-radius: 0!important;
+    border-bottom: 2px solid rgb(182, 64, 28);
+    margin: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    border-bottom: honeydew;
+    background-color: rgb(34, 28, 28);
+}
+
+.header_nav {
+    border-radius: 40px;
+}
+
+.btn-success:hover {
+    background-color: rgb(34, 28, 28);
+}
