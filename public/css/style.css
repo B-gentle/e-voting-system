@@ -1,0 +1,172 @@
+body {
+    line-height: 1;
+    margin: 0;
+    background-color: #9b8e8ef2;
+}
+
+/* ######## Nav Bar ############# */
+.bg-dark {
+    background-image: url(../Images/alumniLogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green !important;
+}
+
+.nav-link {
+    color: white;
+    border-radius: 0 !important;
+    border-bottom: 2px solid rgb(182, 64, 28);
+    margin: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    border-bottom: honeydew;
+    background-color: rgb(34, 28, 28);
+}
+
+.header_nav {
+    border-radius: 40px;
+}
+
+
+
+
+/* ################# */
+
+.btn-success:hover {
+    background-color: rgb(34, 28, 28);
+}
+
+.row {
+    margin: 20px;
+}
+
+/* FORM GROUP */
+.login-container {
+    padding: 4% 0;
+    margin-top: 100px;
+    background: linear-gradient(to bottom, rgb(143, 133, 133, 0.5),
+            rgb(146, 173, 146));
+            width: 600px;
+}
+
+.register-form {
+    background: linear-gradient(to bottom, rgb(143, 133, 133, 0.5),
+            rgb(146, 173, 146));
+            box-shadow: 0 0 14px 6px rgba(0,0,0,.1);
+    margin-top: 40px;
+    margin-left: 20%;
+    max-width: 750px;
+}
+
+h1.register-header,
+div.register-form-inside {
+    padding: 13px;
+    position: relative;
+    top: 0;
+    left: 17%;
+}
+
+.register-form input.form-control {
+    width: 500px;
+    min-width: 100px;
+}
+
+h1.form-header {
+    color: white;
+    font-size: 35px;
+    font-family: header1;
+}
+
+label {
+    color: #fff;
+}
+
+input.form-control {
+    width: 300px;
+    min-width: 100px;
+}
+
+/* #####  Voting page ###### */
+
+.contestants-container{
+   padding-left: 10%;
+    /* margin-right: 10%; */
+}
+
+img.card-img-top{
+    height: 250px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 35px;
+}
+
+.voting-page-body {
+    background: linear-gradient(to top, rgb(61, 87, 61), rgb(209, 191, 191));
+}
+
+.select-your-leader{
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    font-weight: 400;
+    font-family: header1;
+}
+
+.voting-page-footer{
+    background: rgb(209, 191, 191);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+/* ####### Media Query ######### */
+
+@media screen and (max-width: 780px) {
+
+    h1.login-header,
+    .login-container .form-container {
+        position: relative;
+        top: 30px;
+        left: -50px;
+    }
+
+    .login-container{
+       width: 420px; 
+    }
+
+    .register-form {
+        margin-left: -8px;
+        overflow: hidden;
+    }
+
+    .register-form input.form-control {
+        width: 300px;
+    }
+
+    .col-6{
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .contestants-container{
+        padding: 15px;
+    }
+}
+
+/* ##### Fonts #### */
+@font-face {
+    font-family: headers;
+    src: url(../fonts/StintUltraCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: header1;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
