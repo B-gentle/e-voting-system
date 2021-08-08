@@ -104,6 +104,12 @@ img.card-img-top{
     left: 35px;
 }
 
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
 .voting-page-body {
     background: linear-gradient(to top, rgb(61, 87, 61), rgb(209, 191, 191));
 }
