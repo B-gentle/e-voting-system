@@ -106,17 +106,15 @@ let cardRow = document.querySelector('#card-row');
 const displayCard = (data, container) => {
     const output = data.map((contestant, i) =>{
         return`
-        <div class = "row">
-        <div class="col-6">
-            <div class="card" style="width: 18rem;">
-                <img src="${contestant.img}" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Position</b>: ${contestant.position}</h5>
-                    <p class="card-text"><b>Name</b>: ${contestant.name}</p>
-                    <button onclick='vote("${i}");' class="btn btn-success president-vote-button">Vote</button>
-                    <p>${contestant.votes}</p>
-                </div>
-                </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="${contestant.img}" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Position</b>: ${contestant.position}</h5>
+                        <p class="card-text"><b>Name</b>: ${contestant.name}</p>
+                        <button onclick='vote("${i}");' class="btn btn-success president-vote-button">Vote</button>
+                        <p>${contestant.votes}</p>
+                    </div>
                 </div>
             </div>
         `;
