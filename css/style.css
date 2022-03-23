@@ -16,11 +16,11 @@ body {
 .brand-img {
     border-radius: 100%;
 }
-button.navbar-toggler .togglerIcon i{
+button.navbar-toggler.collapsed{
     box-shadow: none;
     border: none;
 }
-.navbar-toggler i:focus{
+.navbar-toggler:focus{
     box-shadow: none;
     border: none;
 }
