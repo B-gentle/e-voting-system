@@ -16,7 +16,14 @@ body {
 .brand-img {
     border-radius: 100%;
 }
-
+button.navbar-toggler .togglerIcon i{
+    box-shadow: none;
+    border: none;
+}
+.navbar-toggler i:focus{
+    box-shadow: none;
+    border: none;
+}
 ul.nav-pills .nav-item {
     color: white;
     background-color: rgb(97, 129, 113);
@@ -226,7 +233,7 @@ img.card-img-top {
 }
 
 .testimonial-img {
-    height: 8%;
+    height: 50px;
     width: 10%;
     border-radius: 100%;
     margin: 20px;
