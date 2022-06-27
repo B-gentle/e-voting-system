@@ -1,0 +1,83 @@
+.home {
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+}
+
+.logo-div {
+    padding-top: 3em;
+    font-family: raleway-bold;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.otherPage {
+    background-color: aquamarine;
+}
+
+.first-layer {
+    border: 0.2px solid aquamarine;
+    background: linear-gradient(rgba(8, 8, 8, 0.8), rgba(94, 83, 83, 0.4)), url(../../Images/devBackground.jpg);
+    background-size: contain;
+    height: 50%;
+}
+
+.first-layer h1 {
+    color: #fff;
+    padding: 10%;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.secondLayer p {
+    font-size: 30px;
+    padding: 25px;
+    line-height: 1.5;
+    color: rgb(46, 44, 44);
+    font-family: raleway-regular;
+}
+
+@font-face {
+    font-family: raleway-regular;
+    src: url(../../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url(../../fonts/Raleway/Raleway-Bold.ttf);
+}
+
+@media screen and (max-width: 1220px) {
+
+    .home{
+        grid-template-columns: 0.2fr 4fr;
+    }
+    .sidebar ul{
+        text-align: center;
+    }
+
+    ul li>span:nth-child(2) {
+        display: none;
+        padding: 2px;
+    }
+
+    ul li:hover>span:nth-child(2){
+        display: inline;
+        text-align: left;
+        text-overflow: clip;
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+    .home {
+        display: block;
+    }
+
+    .secondLayer{
+        padding: 10px;
+    }
+}

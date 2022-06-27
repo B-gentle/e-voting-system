@@ -1,0 +1,80 @@
+.sidebar {
+    padding: 10px 5px
+}
+
+.sidebar ul {
+    text-align: left;
+    padding: 1px 1rem;
+    transition: all 300ms ease;
+}
+
+.sidebar ul li {
+    list-style: none;
+    line-height: 3.5;
+    padding: 1px 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.sidebar ul li.active {
+    background: aquamarine;
+    color: #000;
+    line-height: 3;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    color: rgb(5, 197, 133);
+}
+
+.sidebar ul li:last-child {
+    margin-top: 20px;
+}
+
+.sidebar ul li span {
+    margin: 1px 10px;
+}
+
+.bars{
+    display: none;
+}
+
+@media screen and (max-width: 1220px){
+}
+
+@media screen and (max-width: 780px){
+
+    .bars{
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        top: 10px;
+        left: 80%;
+        padding: 4px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        font-size: 2rem;
+        color: #000;
+
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        width: 70%;
+        overflow-y: scroll;
+        height: 100vh;
+       font-size: 0.85rem;
+        background-color: rgba(255, 255, 255);
+        transition: all 0.5s ease;
+    }
+
+    .sidebar ul{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    ul li>span:nth-child(2) {
+        display: inline;
+    }
+}
