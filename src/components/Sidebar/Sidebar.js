@@ -11,14 +11,14 @@ const Sidebar = () => {
   return (
     <div>
       <div className='bars'>
-      <GiHamburgerMenu onClick={()=>{setIsClicked(!isClicked); console.log(isClicked) }} />
+      <GiHamburgerMenu onClick={()=>{setIsClicked(!isClicked);}} />
       </div>
       
       <div className='sidebar' style={isClicked ? {left : '0%'}: {left: '-80%'}}>
         <BrandLogo />
         <hr />
         <ul>
-          <SidebarMenu />
+          <SidebarMenu click={isClicked} />
         </ul>
 
       </div>

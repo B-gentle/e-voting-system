@@ -1,23 +1,29 @@
 import { React, useState } from 'react';
 import menuItems from '../../data/dataset';
 import { CgEnter } from 'react-icons/cg';
-// import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const SidebarList = (props) => {
-
-    const [active, setActive] = useState(0);
-
+const SidebarList = () => {
+const [logview, setLogview] = useState(false)
     return (
         <div>
             {menuItems && menuItems.map((item, i) => {
-                return <li key={i} onClick={() => { setActive(i) }} className={active === i ? 'active' : ''}>
+                return <NavLink key={i} to={item.href} className='list'>
                     <span><item.icon /></span>
                     <span>{item.item}</span>
-                </li>
+                </NavLink>
             })
             }
-            <li><span><CgEnter /></span>
-                <span>Login/Register</span></li>
+            <li>
+                <main onClick={()=>setLogview(!logview)}>
+                <span><CgEnter /></span>
+                <span>Login/Register</span>
+                </main>
+                <ul className={ logview ? 'logs display' : 'logs'}>
+                   <NavLink className='list' to='/login'>Login</NavLink>
+                   <NavLink className='list' to='/register'>Register</NavLink>
+                </ul>
+            </li>
         </div>
     )
 }
