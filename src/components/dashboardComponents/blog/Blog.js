@@ -27,10 +27,15 @@ const Blog = () => {
             body: 'Let me tell you all about html',
             author: 'Bash',
             id: 4
-        }])
+        }]);
+
+        const handleDelete = (id)=>{
+const newList = blogs.filter((post) => post.id !== id);
+setBlogs(newList)
+        }
     return (
         <div className='blog'>
-            <BlogList blogs={blogs} title='All Blogs'/>
+            <BlogList blogs={blogs} title='All Blogs' handleDelete={handleDelete}/>
         </div>
     )
 }

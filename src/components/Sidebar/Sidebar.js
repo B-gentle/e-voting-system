@@ -8,17 +8,21 @@ const Sidebar = () => {
 
   const [isClicked, setIsClicked] = useState(false);
 
+  const handleClick = ()=>{
+    setIsClicked(!isClicked)
+  }
+
   return (
     <div>
       <div className='bars'>
-      <GiHamburgerMenu onClick={()=>{setIsClicked(!isClicked);}} />
+      <GiHamburgerMenu onClick={handleClick} />
       </div>
       
-      <div className='sidebar' style={isClicked ? {left : '0%'}: {left: '-80%'}}>
+      <div className={ isClicked ? 'sidebar' : 'sidebar items'} style={isClicked ? {left : '0%'}: {left: '-80%'}}>
         <BrandLogo />
         <hr />
         <ul>
-          <SidebarMenu click={isClicked} />
+          <SidebarMenu click={handleClick} />
         </ul>
 
       </div>

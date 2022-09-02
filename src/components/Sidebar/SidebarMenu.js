@@ -3,10 +3,10 @@ import menuItems from '../../data/dataset';
 import { CgEnter } from 'react-icons/cg';
 import { NavLink } from 'react-router-dom';
 
-const SidebarList = () => {
+const SidebarList = ({click}) => {
 const [logview, setLogview] = useState(false)
     return (
-        <div>
+        <div onClick={click}>
             {menuItems && menuItems.map((item, i) => {
                 return <NavLink key={i} to={item.href} className='list'>
                     <span><item.icon /></span>
