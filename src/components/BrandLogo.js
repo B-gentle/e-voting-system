@@ -6,7 +6,7 @@ const AsideLogo = () => {
         <div>
             <div className='logo-div'>
                 <img src={Logo} alt='' />
-                <h2>COMMAND DEV</h2>
+                <h2>VOBES</h2>
             </div>
         </div>
     )

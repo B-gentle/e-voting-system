@@ -11,3 +11,8 @@
   font-family: raleway-bold;
   src: url(./fonts/Raleway/Raleway-Bold.ttf);
 }
+
+@font-face {
+  font-family: raleway-italic;
+  src: url(./fonts/Raleway/Raleway-Italic.ttf);
+}

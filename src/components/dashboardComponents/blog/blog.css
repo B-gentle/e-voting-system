@@ -1,5 +1,13 @@
+.blog{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-family: raleway-regular;
+}
+
 .blog-preview{
-    padding: 5rem 1rem 10px;
+    padding: 1rem 1rem 10px;
     margin: 20px 0;
     border-bottom: 1px solid #fafafa;
 }
@@ -14,8 +22,58 @@
     margin-bottom: 8px;
 }
 
+.blog-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.add-post{
+    margin-top: 2rem;
+}
+
+.add-post .blog-link{
+    margin: 3rem auto;
+}
+
+.add-post form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-post .content{
+    width: 70%;
+    margin: auto; 
+}
+
+.add-post .ql-toolbar.ql-snow{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    font-size: 1rem;
+}
+
+.add-post .ql-toolbar.ql-snow .ql-formats{
+    margin-right: 0;
+}
+
+.add-post .ql-editor{
+    min-height: 19rem;
+}
+
+.add-post button{
+    background-color: #0096ff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    color: #fafafa;
+}
+
 @media screen and (max-width: 580px) {
     .blog{
         padding: 5rem;
+        flex-direction: column;
     }
 }

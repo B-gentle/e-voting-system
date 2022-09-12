@@ -3,5 +3,12 @@ footer{
     background-color: rgb(13, 13, 14);
     padding: 0.5px;
     color: #fff;
+    /* position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1; */
     /* margin-top: 40px; */
 }

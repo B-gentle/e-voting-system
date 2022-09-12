@@ -11,23 +11,23 @@ const menuItems = [{
     {
         icon: FaVoteYea,
         item: 'Developer Of the Year',
-        href: '/developer-of-the-year'
+        href: '/voting-page'
     },
     {
         icon: FaVoteYea,
         item: 'Developer of the Month',
-        href: '/developer-of-the-month'
-    },
-    {
-        icon: FaVoteYea,
-        item: 'Blog',
-        href: '/blog'
+        href: '/top-rated-movies'
     },
     {
         icon: FaVoteYea,
         item: 'Create A Contest',
         href: '/create-a-contest'
     },
+    {
+        icon: FaVoteYea,
+        item: 'Blog',
+        href: '/blog'
+    }
 ];
 
 
