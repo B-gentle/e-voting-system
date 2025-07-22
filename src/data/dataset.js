@@ -15,7 +15,7 @@ const menuItems = [{
     },
     {
         icon: FaVoteYea,
-        item: 'Developer of the Month',
+        item: 'Top Rated Movies',
         href: '/top-rated-movies'
     },
     {

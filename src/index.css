@@ -9,6 +9,13 @@ body {
   padding: 0;
 }
 
+:root{
+  --primary-color: #5800ff;
+  --secondary-color: #0096FF;
+  --tertiary-color: #00D7FF;
+  --elementary-color: #72FFFF;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

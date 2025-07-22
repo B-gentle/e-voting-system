@@ -1,0 +1,18 @@
+.radio-form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    width: 400px;
+    gap: 2rem;
+}
+
+.radio-form-button{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    padding: 1rem;
+    color: #FFFFFF;
+    font-family: raleway-bold;
+}

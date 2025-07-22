@@ -11,6 +11,8 @@ import AddPost from './components/dashboardComponents/blog/AddPost';
 import PageNotFound from './components/noMatch/PageNotFound';
 import BlogDetails from './components/dashboardComponents/blog/blogDetails/BlogDetails';
 import TopRatedSeries from './components/dashboardComponents/topRatedSeries/TopRatedSeries';
+import Register from './components/forms/Register';
+import Login from './components/forms/Login';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path='blog' element={<Blog />} />
           <Route path='blog/:id' element={<BlogDetails />} />
           <Route path='create-post' element={<AddPost />} />
+          <Route path='register' element={<Register/>}/>
+          <Route path='login' element={<Login/>}/>
           <Route path='*' element={<PageNotFound />} />
         </Routes>
 
