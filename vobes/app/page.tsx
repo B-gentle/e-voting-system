@@ -1,18 +1,20 @@
-import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TrustBanner from "@/components/TrustBanner";
+import HowItWorks from "@/components/HowItWorks";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <TrustBanner />
+      <div className="bg-background">
+        <Navbar />
+        <Hero />
+      </div>
+      <HowItWorks />
       <WhyChooseUs />
-      <Features />
+      <TrustBanner />
       <Footer />
     </>
   );

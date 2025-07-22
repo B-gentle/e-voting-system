@@ -14,12 +14,9 @@
 
 @theme {
   --color-primary: #5800ff;
-  --color-primary-light: "#A385FF";
-  --color--primary-dark: "#320087";
-  --color-secondary: #00d7ff0f;
-  --color-secondary-light: "#6ff3ff33";
-  --color-secondary-dark: "#00a2b8";
-  --color-background: "#F3F4F6";
+  --color-primary-light: #A385FF;
+  --color-primary-dark: #2A0765;
+  --color-background: #F0F0FB;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }

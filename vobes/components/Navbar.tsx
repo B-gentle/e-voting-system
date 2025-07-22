@@ -2,13 +2,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { RiMenuUnfold4Line } from "react-icons/ri";
+
 
 export default function Navbar({ username }: { username?: string }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-primary px-2 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center shadow text-white">
+    <nav className="px-8 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center">
       <div className="flex justify-between items-center w-full sm:w-auto">
         <div className="font-bold text-xl text-blue-light">E-Vote</div>
         <button
@@ -16,23 +18,43 @@ export default function Navbar({ username }: { username?: string }) {
           onClick={() => setOpen(!open)}
           aria-label="Toggle nav"
         >
-          <svg width="28" height="28" fill="currentColor">
-            <rect y="6" width="28" height="4" rx="2"/>
-            <rect y="14" width="28" height="4" rx="2"/>
-          </svg>
+          <RiMenuUnfold4Line size={28} />
         </button>
       </div>
       <div
-        className={`flex-col sm:flex-row flex gap-4 sm:gap-6 items-center w-full sm:w-auto transition-all duration-200 ${
+        className={`flex-col sm:flex-row flex gap-8 sm:gap-6 items-center w-full sm:w-auto transition-all duration-200 ${
           open ? "flex" : "hidden sm:flex"
         }`}
       >
-        <Link href="/" className={pathname === "/" ? "underline" : ""}>Home</Link>
-        <Link href="/vote" className={pathname === "/vote" ? "underline" : ""}>Vote</Link>
-        <Link href="/results" className={pathname === "/results" ? "underline" : ""}>Results</Link>
+        <Link href="/" className={pathname === "/" ? "text-[#985FF5]" : ""}>
+          Home
+        </Link>
+        <Link
+          href="/#features"
+          className={pathname === "/#features" ? "text-[#985FF5]" : ""}
+        >
+          Features
+        </Link>
+        <Link
+          href="/contact"
+          className={pathname === "/contact" ? "text-[#985FF5]" : ""}
+        >
+          Contact us
+        </Link>
         {username === "admin" && <Link href="/admin">Admin</Link>}
-        {!username && <Link href="/login">Login</Link>}
-        {username && <span className="bg-blue-light px-3 py-1 rounded text-white">{username}</span>}
+        {!username && (
+          <Link
+            href="/login"
+            className="bg-primary text-white p-8 py-2 rounded-lg md:ml-8"
+          >
+            Login
+          </Link>
+        )}
+        {username && (
+          <span className="bg-blue-light px-3 py-1 rounded text-white">
+            {username}
+          </span>
+        )}
       </div>
     </nav>
   );

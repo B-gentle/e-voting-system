@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Raleway, Merriweather_Sans } from "next/font/google";
+import { Poppins, Merriweather_Sans } from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({
-  variable: "--font-raleway",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-});
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+})
 
 const merriweatherSans = Merriweather_Sans({
   variable: "--font-merriweather-sans",
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable} ${merriweatherSans.variable} antialiased`}
+        className={`${poppins.variable} ${merriweatherSans.variable} antialiased`}
       >
         {children}
       </body>

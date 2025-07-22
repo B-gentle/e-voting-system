@@ -9,9 +9,10 @@ export default function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="bg-primary text-white py-6 px-2 mt-10"
+      className="text-white py-6 px-2 mt-10"
     >
-      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="bg-primary"></div>
+      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 bg-primary-dark">
         <div className="text-lg font-semibold">E-Vote Platform &copy; {new Date().getFullYear()}</div>
         <div className="flex gap-4">
           <Link href="/" className="hover:text-secondary-light">Home</Link>

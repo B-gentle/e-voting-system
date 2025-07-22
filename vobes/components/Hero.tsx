@@ -3,22 +3,25 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-primary-light via-secondary to-background py-12 px-2 sm:px-6 flex flex-col items-center text-center">
+    <section className="relative py-12 px-2 sm:px-6 flex flex-col items-center text-center">
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-3xl sm:text-5xl font-extrabold text-primary mb-4"
+        className="md:text-5xl text-3xl font-bold mb-4 md:max-w-2xl leading-14"
       >
-        Secure & Modern E-Voting Platform
+        Vote Securely. Anywhere. Anytime.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.7 }}
-        className="text-blue-dark text-lg sm:text-2xl mb-6 max-w-xl"
+        className="md:text-2xl mb-6 md:px-12 md:max-w-6xl"
       >
-        Cast your vote with confidence, transparency, and privacy. Empowering democracy through technology.
+        Vobe is a modern e-voting platform built for transparency, speed, and
+        convenience. From campus elections to organizational polls, we make it
+        easy to vote and track results securely and in real time. democracy
+        through technology.
       </motion.p>
       <motion.a
         initial={{ opacity: 0, scale: 0.9 }}
