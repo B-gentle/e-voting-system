@@ -27,7 +27,7 @@ const HowItWorks = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="py-18 px-4 sm:px-6 flex flex-col items-center "
+      className="py-18 px-4 sm:px-6 flex flex-col items-center how-it-works-bg"
     >
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
@@ -57,6 +57,7 @@ const HowItWorks = () => {
             <HowItWorksCard
               title={step.title}
               description={step.description}
+              image={step.image}
             />
           </motion.div>
         ))}

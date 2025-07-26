@@ -14,15 +14,24 @@
 
 @theme {
   --color-primary: #5800ff;
-  --color-primary-light: #A385FF;
-  --color-primary-dark: #2A0765;
-  --color-background: #F0F0FB;
+  --color-primary-light: #a385ff;
+  --color-primary-dark: #2a0765;
+  --color-background: #f0f0fb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .how-it-works-bg {
+    background-image: url("../assets/howItWorksBG.png");
+    background-repeat: no-repeat;
+    background-position: bottom bottom;
+    background-size: cover;
   }
 }
 
@@ -34,4 +43,22 @@ body {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.how-it-works-bg {
+  background-image: url("../assets/howItWorksBG.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.choose-us-bg {
+  background: linear-gradient(to left, rgba(164, 164, 169, 0.5), rgba(240, 240, 251, 0.5)), url("../assets/chooseUsBg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
+.contact-clippath {
+ clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 38%, 90% 46%, 50% 58%, 0 100%, 0 0);
 }
