@@ -6,9 +6,9 @@ import HowImage4 from "@/assets/howItWorksImg4.png";
 import chooseUsImg1 from "@/assets/encryptionLock.png"
 import chooseUsImg2 from "@/assets/chooseUsIcon2.png"
 import chooseUsImg3 from "@/assets/settings.png"
-import chooseUsImg4 from "@/assets/chooseUsICon4.png"
-import chooseUsImg5 from "@/assets/chooseUsICon5.png"
-import chooseUsImg6 from "@/assets/chooseUsICon6.png"
+import chooseUsImg4 from "@/assets/chooseUsIcon4.png"
+import chooseUsImg5 from "@/assets/chooseUsIcon5.png"
+import chooseUsImg6 from "@/assets/chooseUsIcon6.png"
 
 import perfect1 from "@/assets/perfecticon1.png";
 import perfect2 from "@/assets/perfecticon2.png";
