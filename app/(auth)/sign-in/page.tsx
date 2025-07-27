@@ -6,98 +6,106 @@ export const metadata: Metadata = {
 import { Metadata } from "next";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
+import AuthCover from "@/components/AuthCover";
 
 const page = () => {
   return (
-    <div className="flex flex-1 flex-col justify-center items-center px-4 py-8">
-      <div className="w-full max-w-md p-8">
-        <h2 className="text-3xl font-bold mb-2 text-gray-900 text-center">
-          Welcome Back
-        </h2>
-        <p className="mb-6 text-gray-600 text-center">
-          Organize and manage elections online safely, efficiently, and from
-          anywhere.
-        </p>
-        <form className="flex flex-col gap-4">
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Email"
-              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-primary transition"
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Password
-            </label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Password"
-              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-primary transition"
-              required
-            />
-            <div className="flex mt-1">
-              <span className="text-xs text-gray-400">
-                Must have 8+ characters with mix of letters, numbers and symbols
-              </span>
-            </div>
-          </div>
-          <div className="flex justify-between items-center mt-2">
-            <div className="flex items-center gap-2">
-              <input type="checkbox" id="remember" className="accent-primary" />
-              <label htmlFor="remember" className="text-sm text-gray-700">
-                Remember me
+    <AuthCover>
+      <div className="flex flex-1 flex-col justify-center items-center px-4 py-8">
+        <div className="w-full max-w-md p-8">
+          <h2 className="text-3xl font-bold mb-2 text-gray-900 text-center">
+            Welcome Back
+          </h2>
+          <p className="mb-6 text-gray-600 text-center">
+            Organize and manage elections online safely, efficiently, and from
+            anywhere.
+          </p>
+          <form className="flex flex-col gap-4">
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Email
               </label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-primary transition"
+                required
+              />
             </div>
-            <a
-              href="#"
-              className="text-xs text-primary font-medium hover:underline"
+            <div>
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Password
+              </label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-primary transition"
+                required
+              />
+              <div className="flex mt-1">
+                <span className="text-xs text-gray-400">
+                  Must have 8+ characters with mix of letters, numbers and
+                  symbols
+                </span>
+              </div>
+            </div>
+            <div className="flex justify-between items-center mt-2">
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="remember"
+                  className="accent-primary"
+                />
+                <label htmlFor="remember" className="text-sm text-gray-700">
+                  Remember me
+                </label>
+              </div>
+              <a
+                href="#"
+                className="text-xs text-primary font-medium hover:underline"
+              >
+                Forgot password?
+              </a>
+            </div>
+            <button
+              type="submit"
+              className="bg-primary text-white font-semibold py-2 rounded mt-2 hover:bg-[#985FF5] transition"
             >
-              Forgot password?
-            </a>
+              Sign in
+            </button>
+          </form>
+          <div className="flex items-center my-4">
+            <div className="flex-grow border-t border-gray-200"></div>
+            <span className="mx-2 text-gray-400 text-xs">OR</span>
+            <div className="flex-grow border-t border-gray-200"></div>
           </div>
           <button
-            type="submit"
-            className="bg-primary text-white font-semibold py-2 rounded mt-2 hover:bg-[#985FF5] transition"
+            type="button"
+            className="flex items-center justify-center gap-2 w-full bg-primary-light text-gray-700 font-semibold py-2 rounded hover:bg-[#e0d7fa] transition"
           >
-            Sign in
+            <FcGoogle className="text-lg" />
+            Sign in with google
           </button>
-        </form>
-        <div className="flex items-center my-4">
-          <div className="flex-grow border-t border-gray-200"></div>
-          <span className="mx-2 text-gray-400 text-xs">OR</span>
-          <div className="flex-grow border-t border-gray-200"></div>
-        </div>
-        <button
-          type="button"
-          className="flex items-center justify-center gap-2 w-full bg-primary-light text-gray-700 font-semibold py-2 rounded hover:bg-[#e0d7fa] transition"
-        >
-          <FcGoogle className="text-lg" />
-          Sign in with google
-        </button>
-        <div className="text-center mt-4 text-sm text-gray-600">
-          Don&apos;t have an account?{" "}
-          <a
-            href="/sign-up"
-            className="text-primary font-semibold hover:underline"
-          >
-            Sign UP
-          </a>
+          <div className="text-center mt-4 text-sm text-gray-600">
+            Don&apos;t have an account?{" "}
+            <a
+              href="/sign-up"
+              className="text-primary font-semibold hover:underline"
+            >
+              Sign UP
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </AuthCover>
   );
 };
 
