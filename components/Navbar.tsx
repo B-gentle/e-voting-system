@@ -55,7 +55,7 @@ export default function Navbar({ username }: { username?: string }) {
         {username === "admin" && <Link href="/admin">Admin</Link>}
         {!username && (
           <Link
-            href="/login"
+            href="/sign-in"
             className="bg-primary text-white p-8 py-2 rounded-lg md:ml-8"
           >
             Login

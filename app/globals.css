@@ -15,6 +15,7 @@
 @theme {
   --color-primary: #5800ff;
   --color-primary-light: #a385ff;
+  --color-primary-opaque: rgb(88,0,255, 0.5);
   --color-primary-dark: #2a0765;
   --color-background: #f0f0fb;
 }
@@ -53,9 +54,23 @@ body {
 }
 
 .choose-us-bg {
-  background: linear-gradient(to left, rgba(164, 164, 169, 0.5), rgba(240, 240, 251, 0.5)), url("../assets/chooseUsBg.png");
+  background: linear-gradient(to left, rgb(240, 240, 251, 0.5), rgba(240, 240, 251, 0.5)), url("../assets/chooseUsBg.png");
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: contain;
+}
+
+.form-bg {
+  background: linear-gradient(to left, rgba(164, 164, 169, 0.5), rgba(240, 240, 251, 0.5)), url("../assets/chooseUsBg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.auth-bg {
+  background: linear-gradient(to left, rgba(164, 164, 169, 0.5), rgba(240, 240, 251, 0.5)), url("../assets/auth-bg.png");
+  background-repeat: no-repeat;
+  background-position: center left;
   background-size: contain;
 }
 

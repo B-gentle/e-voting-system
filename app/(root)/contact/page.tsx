@@ -72,7 +72,7 @@ export default function ContactPage() {
               <span className="text-gray-700 text-sm">+234 90504300265</span>
             </div>
             <div className="flex items-center gap-3">
-              <MdMail className="text-prima mr-3" size={30} />
+              <MdMail className="text-primary mr-3" size={30} />
               <span className="text-gray-700 text-sm mr-3">vobe@gmail.com</span>
             </div>
           </div>
