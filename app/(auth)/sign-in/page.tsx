@@ -5,13 +5,15 @@ export const metadata: Metadata = {
 
 import { Metadata } from "next";
 import React from "react";
-import { FaGoogle } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const page = () => {
   return (
     <div className="flex flex-1 flex-col justify-center items-center px-4 py-8">
       <div className="w-full max-w-md p-8">
-        <h2 className="text-3xl font-bold mb-2 text-gray-900 text-center">Welcome Back</h2>
+        <h2 className="text-3xl font-bold mb-2 text-gray-900 text-center">
+          Welcome Back
+        </h2>
         <p className="mb-6 text-gray-600 text-center">
           Organize and manage elections online safely, efficiently, and from
           anywhere.
@@ -46,23 +48,25 @@ const page = () => {
               className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-primary transition"
               required
             />
-            <div className="flex justify-between items-center mt-1">
+            <div className="flex mt-1">
               <span className="text-xs text-gray-400">
                 Must have 8+ characters with mix of letters, numbers and symbols
               </span>
-              <a
-                href="#"
-                className="text-xs text-primary font-medium hover:underline"
-              >
-                Forgot password?
-              </a>
             </div>
           </div>
-          <div className="flex items-center gap-2 mt-2">
-            <input type="checkbox" id="remember" className="accent-primary" />
-            <label htmlFor="remember" className="text-sm text-gray-700">
-              Remember me
-            </label>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex items-center gap-2">
+              <input type="checkbox" id="remember" className="accent-primary" />
+              <label htmlFor="remember" className="text-sm text-gray-700">
+                Remember me
+              </label>
+            </div>
+            <a
+              href="#"
+              className="text-xs text-primary font-medium hover:underline"
+            >
+              Forgot password?
+            </a>
           </div>
           <button
             type="submit"
@@ -78,9 +82,9 @@ const page = () => {
         </div>
         <button
           type="button"
-          className="flex items-center justify-center gap-2 w-full bg-[#ede9fe] text-gray-700 font-semibold py-2 rounded hover:bg-[#e0d7fa] transition"
+          className="flex items-center justify-center gap-2 w-full bg-primary-light text-gray-700 font-semibold py-2 rounded hover:bg-[#e0d7fa] transition"
         >
-          <FaGoogle className="text-lg" />
+          <FcGoogle className="text-lg" />
           Sign in with google
         </button>
         <div className="text-center mt-4 text-sm text-gray-600">
