@@ -11,7 +11,7 @@ import AuthCover from "@/components/AuthCover";
 const page = () => {
   return (
     <AuthCover>
-      <div className="flex flex-1 flex-col justify-center items-center px-4 py-8">
+      <div className="flex flex-1 flex-col justify-center items-center md:px-4 md:py-8">
         <div className="w-full max-w-md p-8">
           <h2 className="text-3xl font-bold mb-2 text-gray-900 text-center">
             Welcome Back
