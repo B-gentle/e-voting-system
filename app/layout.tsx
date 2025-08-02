@@ -6,7 +6,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-})
+});
 
 const merriweatherSans = Merriweather_Sans({
   variable: "--font-merriweather-sans",
@@ -19,11 +19,12 @@ export const metadata: Metadata = {
     "A platform for conducting online voting securely and efficiently.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body

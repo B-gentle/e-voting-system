@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AuthCover({
   children,
-  illustration = "/auth-illustration.png",
+  illustration = "/auth-Illustration.png",
 }: {
   children: React.ReactNode;
   illustration?: string;
@@ -14,6 +15,7 @@ export default function AuthCover({
         <div className="absolute top-6 left-6">
           <Image src="/dotgrid.png" alt="" width={40} height={40} />
         </div>
+        <Link href="/">
         <Image
           src={illustration}
           alt="Auth illustration"
@@ -22,6 +24,7 @@ export default function AuthCover({
           className="z-10"
           priority
         />
+        </Link>
         <div className="absolute bottom-6 right-6">
           <Image src="/dotgrid.png" alt="" width={40} height={40} />
         </div>

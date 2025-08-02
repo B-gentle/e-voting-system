@@ -3,12 +3,19 @@ import React, { useActionState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { signInWithCredentialsAction } from "@/lib/actions/user";
 import { useSearchParams } from "next/navigation";
+import {signIn} from "next-auth/react"
 
 const Form = () => {
   const [data, action, isPending] = useActionState(signInWithCredentialsAction, {
     success: false,
     message: "",
   });
+
+  const socialLogin = (provider: "google") => {
+    signIn(provider, {
+      callbackUrl
+    });
+  }
 
   const searchParams = useSearchParams()
   const callbackUrl = searchParams.get('callbackUrl') || '/';
@@ -96,6 +103,7 @@ const Form = () => {
         <button
           type="button"
           className="flex items-center justify-center gap-2 w-full bg-primary-light text-gray-700 font-semibold py-2 rounded hover:bg-[#e0d7fa] transition"
+          onClick={() => socialLogin("google")}
         >
           <FcGoogle className="text-lg" />
           Sign in with google
