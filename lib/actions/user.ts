@@ -24,6 +24,8 @@ export async function signInWithCredentialsAction(
       throw error;
     }
 
+    console.log(error);
+
     return {
       success: false,
       message: "Invalid email or password",

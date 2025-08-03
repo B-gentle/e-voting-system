@@ -39,7 +39,7 @@ export default function ElectionHero() {
           Create an election
         </Link>
         <Link
-          href="/try"
+          href="/sign-up"
           className="bg-[#d6d6e7] text-gray-700 font-semibold px-6 py-2 rounded shadow hover:bg-[#e5e5f7] transition text-base"
         >
           Try vobe free

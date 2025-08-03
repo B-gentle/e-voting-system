@@ -115,8 +115,8 @@ export const testimonials = [
   },
   {
     text: "We've used Vobe for three board elections now. The security features give us peace of mind, and the setup process is remarkably simple.",
-    name: "Bright Eyo",
-    role: "Brand influencer",
+    name: "Ijeoma Okpaluba",
+    role: "Virtual Assistant",
     degree: "B-Tech",
     avatar: "", // Add avatar image path if available
     rating: 5,
